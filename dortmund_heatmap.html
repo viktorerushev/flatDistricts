@@ -1,0 +1,355 @@
+<!DOCTYPE html>
+<html>
+<head>
+    
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8" />
+    
+        <script>
+            L_NO_TOUCH = false;
+            L_DISABLE_3D = false;
+        </script>
+    
+    <style>html, body {width: 100%;height: 100%;margin: 0;padding: 0;}</style>
+    <style>#map {position:absolute;top:0;bottom:0;right:0;left:0;}</style>
+    <script src="https://cdn.jsdelivr.net/npm/leaflet@1.9.3/dist/leaflet.js"></script>
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/leaflet@1.9.3/dist/leaflet.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css"/>
+    <link rel="stylesheet" href="https://netdna.bootstrapcdn.com/bootstrap/3.0.0/css/bootstrap.min.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.2.0/css/all.min.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/python-visualization/folium/folium/templates/leaflet.awesome.rotate.min.css"/>
+    
+            <meta name="viewport" content="width=device-width,
+                initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+            <style>
+                #map_7eabf6e052dabcd7e12281937f7159ea {
+                    position: relative;
+                    width: 100.0%;
+                    height: 100.0%;
+                    left: 0.0%;
+                    top: 0.0%;
+                }
+                .leaflet-container { font-size: 1rem; }
+            </style>
+        
+    <script src="https://cdn.jsdelivr.net/gh/python-visualization/folium@main/folium/templates/leaflet_heat.min.js"></script>
+</head>
+<body>
+    
+    
+            <div class="folium-map" id="map_7eabf6e052dabcd7e12281937f7159ea" ></div>
+        
+</body>
+<script>
+    
+    
+            var map_7eabf6e052dabcd7e12281937f7159ea = L.map(
+                "map_7eabf6e052dabcd7e12281937f7159ea",
+                {
+                    center: [51.5136, 7.4653],
+                    crs: L.CRS.EPSG3857,
+                    zoom: 12,
+                    zoomControl: true,
+                    preferCanvas: false,
+                }
+            );
+
+            
+
+        
+    
+            var tile_layer_2fd3b3e5e991aa3445405ae724113cf8 = L.tileLayer(
+                "https://tile.openstreetmap.org/{z}/{x}/{y}.png",
+                {"attribution": "\u0026copy; \u003ca href=\"https://www.openstreetmap.org/copyright\"\u003eOpenStreetMap\u003c/a\u003e contributors", "detectRetina": false, "maxNativeZoom": 19, "maxZoom": 19, "minZoom": 0, "noWrap": false, "opacity": 1, "subdomains": "abc", "tms": false}
+            );
+        
+    
+            tile_layer_2fd3b3e5e991aa3445405ae724113cf8.addTo(map_7eabf6e052dabcd7e12281937f7159ea);
+        
+    
+            var marker_7bae7e81f7f57d978d7f34f15cfd059c = L.marker(
+                [51.5121044, 7.481720999999999],
+                {}
+            ).addTo(map_7eabf6e052dabcd7e12281937f7159ea);
+        
+    
+        var popup_66e434ff13659c889743a9b6e5a89a6f = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_b011e881b0cfb27d64809088c79b91ca = $(`<div id="html_b011e881b0cfb27d64809088c79b91ca" style="width: 100.0%; height: 100.0%;">Rent per meter: 18.166666666666668</div>`)[0];
+                popup_66e434ff13659c889743a9b6e5a89a6f.setContent(html_b011e881b0cfb27d64809088c79b91ca);
+            
+        
+
+        marker_7bae7e81f7f57d978d7f34f15cfd059c.bindPopup(popup_66e434ff13659c889743a9b6e5a89a6f)
+        ;
+
+        
+    
+    
+            var marker_28ceb6a2350414c75c88b58de95150ef = L.marker(
+                [51.4840025, 7.4359939],
+                {}
+            ).addTo(map_7eabf6e052dabcd7e12281937f7159ea);
+        
+    
+        var popup_2dcce49cb5b9438837d1aad22571f98a = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_60df9c61400d449ef2d20d7b46f275c4 = $(`<div id="html_60df9c61400d449ef2d20d7b46f275c4" style="width: 100.0%; height: 100.0%;">Rent per meter: 20.0</div>`)[0];
+                popup_2dcce49cb5b9438837d1aad22571f98a.setContent(html_60df9c61400d449ef2d20d7b46f275c4);
+            
+        
+
+        marker_28ceb6a2350414c75c88b58de95150ef.bindPopup(popup_2dcce49cb5b9438837d1aad22571f98a)
+        ;
+
+        
+    
+    
+            var marker_cfe87d69fbd9c47a0b05fcd1ea716841 = L.marker(
+                [51.4983058, 7.330337],
+                {}
+            ).addTo(map_7eabf6e052dabcd7e12281937f7159ea);
+        
+    
+        var popup_3ec8faf6bab511fa6afddc3654f99317 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_30eb56f3c814b9ae9f55274342d9eda2 = $(`<div id="html_30eb56f3c814b9ae9f55274342d9eda2" style="width: 100.0%; height: 100.0%;">Rent per meter: 14.575</div>`)[0];
+                popup_3ec8faf6bab511fa6afddc3654f99317.setContent(html_30eb56f3c814b9ae9f55274342d9eda2);
+            
+        
+
+        marker_cfe87d69fbd9c47a0b05fcd1ea716841.bindPopup(popup_3ec8faf6bab511fa6afddc3654f99317)
+        ;
+
+        
+    
+    
+            var marker_dd2319939333a3fed3322ffbba6fb2ae = L.marker(
+                [51.498766, 7.4503445],
+                {}
+            ).addTo(map_7eabf6e052dabcd7e12281937f7159ea);
+        
+    
+        var popup_572d45f6642729eeb0d3c469e8caf450 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_a58858da12f26e543b1bd8fbdd25bd84 = $(`<div id="html_a58858da12f26e543b1bd8fbdd25bd84" style="width: 100.0%; height: 100.0%;">Rent per meter: 26.566666666666666</div>`)[0];
+                popup_572d45f6642729eeb0d3c469e8caf450.setContent(html_a58858da12f26e543b1bd8fbdd25bd84);
+            
+        
+
+        marker_dd2319939333a3fed3322ffbba6fb2ae.bindPopup(popup_572d45f6642729eeb0d3c469e8caf450)
+        ;
+
+        
+    
+    
+            var marker_83efd3f5650891594c03ea652ff1a6ac = L.marker(
+                [51.51479339999999, 7.421317799999999],
+                {}
+            ).addTo(map_7eabf6e052dabcd7e12281937f7159ea);
+        
+    
+        var popup_f03cc04cac9571c9ea63c6de85328e8c = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_e18354a3d898aa46e6d044d6e23026b6 = $(`<div id="html_e18354a3d898aa46e6d044d6e23026b6" style="width: 100.0%; height: 100.0%;">Rent per meter: 10.733333333333333</div>`)[0];
+                popup_f03cc04cac9571c9ea63c6de85328e8c.setContent(html_e18354a3d898aa46e6d044d6e23026b6);
+            
+        
+
+        marker_83efd3f5650891594c03ea652ff1a6ac.bindPopup(popup_f03cc04cac9571c9ea63c6de85328e8c)
+        ;
+
+        
+    
+    
+            var marker_eb8189258a657fc87542e4fc79d047ee = L.marker(
+                [51.4771333, 7.4361905],
+                {}
+            ).addTo(map_7eabf6e052dabcd7e12281937f7159ea);
+        
+    
+        var popup_e70c84b87b4efc915b89708af3f1f695 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_94fc636eeb6fe31e524f66b8b5ab7464 = $(`<div id="html_94fc636eeb6fe31e524f66b8b5ab7464" style="width: 100.0%; height: 100.0%;">Rent per meter: 17.391304347826086</div>`)[0];
+                popup_e70c84b87b4efc915b89708af3f1f695.setContent(html_94fc636eeb6fe31e524f66b8b5ab7464);
+            
+        
+
+        marker_eb8189258a657fc87542e4fc79d047ee.bindPopup(popup_e70c84b87b4efc915b89708af3f1f695)
+        ;
+
+        
+    
+    
+            var marker_7239ffdf6214d7dccc96e3f6a81d9ea3 = L.marker(
+                [51.4813464, 7.441351399999999],
+                {}
+            ).addTo(map_7eabf6e052dabcd7e12281937f7159ea);
+        
+    
+        var popup_4ab1fda5ed7efa585084e617958c4580 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_bd2ee320df21d6c08093de7e5fb3fc30 = $(`<div id="html_bd2ee320df21d6c08093de7e5fb3fc30" style="width: 100.0%; height: 100.0%;">Rent per meter: 11.029411764705882</div>`)[0];
+                popup_4ab1fda5ed7efa585084e617958c4580.setContent(html_bd2ee320df21d6c08093de7e5fb3fc30);
+            
+        
+
+        marker_7239ffdf6214d7dccc96e3f6a81d9ea3.bindPopup(popup_4ab1fda5ed7efa585084e617958c4580)
+        ;
+
+        
+    
+    
+            var marker_e18a18dd302ef47a27950abcb2725b47 = L.marker(
+                [51.5485133, 7.4495093],
+                {}
+            ).addTo(map_7eabf6e052dabcd7e12281937f7159ea);
+        
+    
+        var popup_34523ab1b7c9cdcf2708a91baea21b87 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_5e1c7a4ebf3b471ab28a6a0a099e685a = $(`<div id="html_5e1c7a4ebf3b471ab28a6a0a099e685a" style="width: 100.0%; height: 100.0%;">Rent per meter: 23.0</div>`)[0];
+                popup_34523ab1b7c9cdcf2708a91baea21b87.setContent(html_5e1c7a4ebf3b471ab28a6a0a099e685a);
+            
+        
+
+        marker_e18a18dd302ef47a27950abcb2725b47.bindPopup(popup_34523ab1b7c9cdcf2708a91baea21b87)
+        ;
+
+        
+    
+    
+            var marker_7025b214f3c701e947bfa5d1991e2c15 = L.marker(
+                [51.5153459, 7.4756497],
+                {}
+            ).addTo(map_7eabf6e052dabcd7e12281937f7159ea);
+        
+    
+        var popup_573773a9ea4171c194e27b463287fb7d = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_cb362dbd5a982d318a113303f4420795 = $(`<div id="html_cb362dbd5a982d318a113303f4420795" style="width: 100.0%; height: 100.0%;">Rent per meter: 20.0</div>`)[0];
+                popup_573773a9ea4171c194e27b463287fb7d.setContent(html_cb362dbd5a982d318a113303f4420795);
+            
+        
+
+        marker_7025b214f3c701e947bfa5d1991e2c15.bindPopup(popup_573773a9ea4171c194e27b463287fb7d)
+        ;
+
+        
+    
+    
+            var marker_c187b177b88212af22d8400d015df959 = L.marker(
+                [51.5047883, 7.4546053],
+                {}
+            ).addTo(map_7eabf6e052dabcd7e12281937f7159ea);
+        
+    
+        var popup_ddf1210546cd62765d3c88fa928f0c59 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_d3ebbf0c834a459cb0f33793bc03fb26 = $(`<div id="html_d3ebbf0c834a459cb0f33793bc03fb26" style="width: 100.0%; height: 100.0%;">Rent per meter: 16.25</div>`)[0];
+                popup_ddf1210546cd62765d3c88fa928f0c59.setContent(html_d3ebbf0c834a459cb0f33793bc03fb26);
+            
+        
+
+        marker_c187b177b88212af22d8400d015df959.bindPopup(popup_ddf1210546cd62765d3c88fa928f0c59)
+        ;
+
+        
+    
+    
+            var marker_ea365be43bdbe65a96ba158d69a1d3e7 = L.marker(
+                [51.5104827, 7.453277],
+                {}
+            ).addTo(map_7eabf6e052dabcd7e12281937f7159ea);
+        
+    
+        var popup_d273eb6e3dd0f451aa0e958546cb3ef1 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_117704d7931d339a48ed1a9fcf60270c = $(`<div id="html_117704d7931d339a48ed1a9fcf60270c" style="width: 100.0%; height: 100.0%;">Rent per meter: 7.333333333333333</div>`)[0];
+                popup_d273eb6e3dd0f451aa0e958546cb3ef1.setContent(html_117704d7931d339a48ed1a9fcf60270c);
+            
+        
+
+        marker_ea365be43bdbe65a96ba158d69a1d3e7.bindPopup(popup_d273eb6e3dd0f451aa0e958546cb3ef1)
+        ;
+
+        
+    
+    
+            var marker_7f3372ec49cb68f1c539ebd5697ef065 = L.marker(
+                [51.5024451, 7.4564619],
+                {}
+            ).addTo(map_7eabf6e052dabcd7e12281937f7159ea);
+        
+    
+        var popup_aef50e63b80af5a8edd9490ac51f349d = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_3f5cf6fd37ad3d12d9e3f0f1028e9a61 = $(`<div id="html_3f5cf6fd37ad3d12d9e3f0f1028e9a61" style="width: 100.0%; height: 100.0%;">Rent per meter: 22.22222222222222</div>`)[0];
+                popup_aef50e63b80af5a8edd9490ac51f349d.setContent(html_3f5cf6fd37ad3d12d9e3f0f1028e9a61);
+            
+        
+
+        marker_7f3372ec49cb68f1c539ebd5697ef065.bindPopup(popup_aef50e63b80af5a8edd9490ac51f349d)
+        ;
+
+        
+    
+    
+            var marker_e826ea2590e6d3e649a080b799e82f49 = L.marker(
+                [51.5133936, 7.438325499999999],
+                {}
+            ).addTo(map_7eabf6e052dabcd7e12281937f7159ea);
+        
+    
+        var popup_86d4e97c0875f26a0c257c8b03271b70 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_ccfb625385b824a2de463fbf115d5d37 = $(`<div id="html_ccfb625385b824a2de463fbf115d5d37" style="width: 100.0%; height: 100.0%;">Rent per meter: 16.551724137931036</div>`)[0];
+                popup_86d4e97c0875f26a0c257c8b03271b70.setContent(html_ccfb625385b824a2de463fbf115d5d37);
+            
+        
+
+        marker_e826ea2590e6d3e649a080b799e82f49.bindPopup(popup_86d4e97c0875f26a0c257c8b03271b70)
+        ;
+
+        
+    
+    
+            var heat_map_25728515a0c2f4d18dcd07cae0a8e613 = L.heatLayer(
+                [[51.5121044, 7.481720999999999, 18.166666666666668], [51.4840025, 7.4359939, 20.0], [51.4983058, 7.330337, 14.575], [51.498766, 7.4503445, 26.566666666666666], [51.51479339999999, 7.421317799999999, 10.733333333333333], [51.4771333, 7.4361905, 17.391304347826086], [51.4813464, 7.441351399999999, 11.029411764705882], [51.5485133, 7.4495093, 23.0], [51.5153459, 7.4756497, 20.0], [51.5047883, 7.4546053, 16.25], [51.5104827, 7.453277, 7.333333333333333], [51.5024451, 7.4564619, 22.22222222222222], [51.5133936, 7.438325499999999, 16.551724137931036]],
+                {"blur": 15, "maxZoom": 18, "minOpacity": 0.5, "radius": 25}
+            );
+        
+    
+            heat_map_25728515a0c2f4d18dcd07cae0a8e613.addTo(map_7eabf6e052dabcd7e12281937f7159ea);
+        
+</script>
+</html>
